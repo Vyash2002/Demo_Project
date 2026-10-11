@@ -1,0 +1,50 @@
+{
+  "model_card": {
+    "name": "Machine failure within 7 days",
+    "version": "rf-20261011-142830",
+    "algorithm": "random_forest, class-weighted, Platt calibration",
+    "training_window": "2026-04-08 to 2026-08-19",
+    "validation": "Rolling-origin time split, 4 folds, 7-day gap",
+    "heldout_period": "2026-08-27 to 2026-09-23",
+    "baselines": {
+      "threshold_rule": {
+        "heldout_pr_auc": 0.111
+      },
+      "logistic_regression": {
+        "heldout_pr_auc": 0.391
+      }
+    },
+    "final": {
+      "pr_auc": 0.391,
+      "recall_at_precision_0.5": 0.357,
+      "brier": 0.0294,
+      "precision_at_threshold": 0.306,
+      "row_recall_at_threshold": 0.357,
+      "failures": 8,
+      "failures_caught": 4,
+      "median_lead_time_days": 4.8,
+      "false_alarms_per_machine_month": 0.93,
+      "pr_auc_95ci": [
+        0.103,
+        0.747
+      ]
+    },
+    "threshold": 0.12,
+    "cost_assumption": "A miss costs 10x a false alarm",
+    "top_features": [
+      "vib_per_krpm_slope_7d",
+      "vib_slope_1d",
+      "vib_slope_3d",
+      "vib_vs_base_1d",
+      "temp_slope_1d"
+    ],
+    "time_to_failure": {
+      "mae_days": 1.73,
+      "coverage_10_90": 0.74
+    },
+    "known_limits": "Synthetic data; few failures in the held-out period; sensor-fault handling is rule-based; trained for a 7-day horizon only; an unseen fault type (e.g. pressure-only) may be missed.",
+    "random_seed": 42,
+    "train_seconds": 33.3,
+    "score_ms_one_machine": 245
+  }
+}

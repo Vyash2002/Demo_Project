@@ -1,0 +1,1130 @@
+{
+  "model_version": "rf-20261011-142830",
+  "horizon_days": 7,
+  "threshold": 0.12,
+  "as_of": "2026-10-11 00:00",
+  "predictions": [
+    {
+      "machine_id": "M-001",
+      "status": "scored",
+      "failure_prob": 0.118,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.535,
+          "contribution": 0.056
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.079,
+          "contribution": -0.03
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": 0.051,
+          "contribution": -0.028
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-002",
+      "status": "scored",
+      "failure_prob": 0.068,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.001,
+          "contribution": -0.057
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.043,
+          "contribution": -0.034
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": -0.259,
+          "contribution": -0.029
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-003",
+      "status": "scored",
+      "failure_prob": 0.911,
+      "risk_band": "high",
+      "days_to_failure_est": 3,
+      "days_to_failure_range": [
+        1,
+        4
+      ],
+      "days_to_failure_note": "estimate with 10-90% range",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.144,
+          "contribution": 0.119
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.492,
+          "contribution": 0.077
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.893,
+          "contribution": 0.069
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-004",
+      "status": "scored",
+      "failure_prob": 0.119,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.003,
+          "contribution": -0.061
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.102,
+          "contribution": -0.031
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": -0.186,
+          "contribution": -0.026
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-005",
+      "status": "scored",
+      "failure_prob": 0.027,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.001,
+          "contribution": -0.085
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.03,
+          "contribution": -0.052
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.027,
+          "contribution": -0.035
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-006",
+      "status": "scored",
+      "failure_prob": 0.126,
+      "risk_band": "high",
+      "days_to_failure_est": 4,
+      "days_to_failure_range": [
+        1,
+        7
+      ],
+      "days_to_failure_note": "estimate with 10-90% range",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.064
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.053,
+          "contribution": -0.037
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": 0.008,
+          "contribution": -0.022
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-007",
+      "status": "scored",
+      "failure_prob": 0.048,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.002,
+          "contribution": -0.059
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.037,
+          "contribution": -0.05
+        },
+        {
+          "feature": "vib_std_7d",
+          "value": 0.148,
+          "contribution": -0.033
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-008",
+      "status": "scored",
+      "failure_prob": 0.101,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.001,
+          "contribution": -0.055
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.034,
+          "contribution": -0.041
+        },
+        {
+          "feature": "pres_vs_base_1d",
+          "value": -0.463,
+          "contribution": 0.026
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-009",
+      "status": "scored",
+      "failure_prob": 0.027,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.062
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.033,
+          "contribution": -0.044
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": 0.017,
+          "contribution": -0.025
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-010",
+      "status": "scored",
+      "failure_prob": 0.026,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.086
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.026,
+          "contribution": -0.053
+        },
+        {
+          "feature": "temp_slope_1d",
+          "value": -2.97,
+          "contribution": -0.025
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-011",
+      "status": "scored",
+      "failure_prob": 0.954,
+      "risk_band": "high",
+      "days_to_failure_est": 2,
+      "days_to_failure_range": [
+        1,
+        5
+      ],
+      "days_to_failure_note": "estimate with 10-90% range",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.202,
+          "contribution": 0.112
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.246,
+          "contribution": 0.081
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.812,
+          "contribution": 0.054
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-012",
+      "status": "scored",
+      "failure_prob": 0.049,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.058
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.039,
+          "contribution": -0.042
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.011,
+          "contribution": -0.027
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-013",
+      "status": "scored",
+      "failure_prob": 0.039,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.079
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.023,
+          "contribution": -0.055
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.005,
+          "contribution": -0.028
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-014",
+      "status": "scored",
+      "failure_prob": 0.052,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.099
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.005,
+          "contribution": -0.049
+        },
+        {
+          "feature": "temp_slope_1d",
+          "value": -2.96,
+          "contribution": -0.029
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-015",
+      "status": "scored",
+      "failure_prob": 0.054,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.003,
+          "contribution": -0.063
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.04,
+          "contribution": -0.038
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.099,
+          "contribution": -0.032
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-016",
+      "status": "scored",
+      "failure_prob": 0.048,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.002,
+          "contribution": -0.063
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.028,
+          "contribution": -0.051
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.14,
+          "contribution": -0.023
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-017",
+      "status": "scored",
+      "failure_prob": 0.046,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.002,
+          "contribution": -0.063
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.043,
+          "contribution": -0.041
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.009,
+          "contribution": -0.028
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-018",
+      "status": "scored",
+      "failure_prob": 0.065,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.06
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.003,
+          "contribution": -0.041
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": 0.005,
+          "contribution": -0.027
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-019",
+      "status": "scored",
+      "failure_prob": 0.63,
+      "risk_band": "high",
+      "days_to_failure_est": 4,
+      "days_to_failure_range": [
+        1,
+        6
+      ],
+      "days_to_failure_note": "estimate with 10-90% range",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.044,
+          "contribution": 0.135
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.313,
+          "contribution": 0.1
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.512,
+          "contribution": 0.056
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-020",
+      "status": "scored",
+      "failure_prob": 0.117,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.001,
+          "contribution": -0.061
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.03,
+          "contribution": -0.043
+        },
+        {
+          "feature": "vib_std_3d",
+          "value": 0.145,
+          "contribution": -0.033
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-021",
+      "status": "scored",
+      "failure_prob": 0.052,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.0,
+          "contribution": -0.076
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.012,
+          "contribution": -0.055
+        },
+        {
+          "feature": "temp_slope_1d",
+          "value": -2.975,
+          "contribution": -0.021
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-022",
+      "status": "sensor_fault_suspected",
+      "failure_prob": null,
+      "days_to_failure_est": null,
+      "days_to_failure_note": "not estimated: sensor fault suspected",
+      "sensor_fault_flag": true,
+      "data_quality": "vibration sensor drift: vibration up without temperature rise"
+    },
+    {
+      "machine_id": "M-023",
+      "status": "scored",
+      "failure_prob": 0.02,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.002,
+          "contribution": -0.069
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.069,
+          "contribution": -0.044
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.037,
+          "contribution": -0.03
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-024",
+      "status": "scored",
+      "failure_prob": 0.027,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.042,
+          "contribution": -0.052
+        },
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.003,
+          "contribution": -0.043
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.099,
+          "contribution": -0.025
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-025",
+      "status": "scored",
+      "failure_prob": 0.074,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.115
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.828,
+          "contribution": 0.042
+        },
+        {
+          "feature": "rpm_slope_1d",
+          "value": 433.55,
+          "contribution": -0.026
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-026",
+      "status": "scored",
+      "failure_prob": 0.039,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.002,
+          "contribution": -0.1
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.043,
+          "contribution": -0.051
+        },
+        {
+          "feature": "rpm_vs_base_1d",
+          "value": 259.316,
+          "contribution": -0.03
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-027",
+      "status": "scored",
+      "failure_prob": 0.94,
+      "risk_band": "high",
+      "days_to_failure_est": 2,
+      "days_to_failure_range": [
+        1,
+        4
+      ],
+      "days_to_failure_note": "estimate with 10-90% range",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.16,
+          "contribution": 0.118
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.236,
+          "contribution": 0.082
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.824,
+          "contribution": 0.059
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-028",
+      "status": "scored",
+      "failure_prob": 0.029,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.064
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.031,
+          "contribution": -0.044
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": 0.001,
+          "contribution": -0.028
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-029",
+      "status": "scored",
+      "failure_prob": 0.042,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.001,
+          "contribution": -0.064
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.042,
+          "contribution": -0.042
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.006,
+          "contribution": -0.028
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-030",
+      "status": "scored",
+      "failure_prob": 0.057,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.001,
+          "contribution": -0.07
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.11,
+          "contribution": -0.037
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.025,
+          "contribution": -0.035
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-031",
+      "status": "scored",
+      "failure_prob": 0.128,
+      "risk_band": "high",
+      "days_to_failure_est": 3,
+      "days_to_failure_range": [
+        0,
+        7
+      ],
+      "days_to_failure_note": "estimate with 10-90% range",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.02,
+          "contribution": 0.121
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.014,
+          "contribution": -0.06
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.078,
+          "contribution": -0.034
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-032",
+      "status": "scored",
+      "failure_prob": 0.026,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.0,
+          "contribution": -0.064
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.007,
+          "contribution": -0.048
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.002,
+          "contribution": -0.027
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-033",
+      "status": "scored",
+      "failure_prob": 0.04,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.003,
+          "contribution": -0.059
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.013,
+          "contribution": -0.039
+        },
+        {
+          "feature": "pres_mean_7d",
+          "value": 5.739,
+          "contribution": -0.035
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-034",
+      "status": "scored",
+      "failure_prob": 0.069,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.002,
+          "contribution": -0.058
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.055,
+          "contribution": -0.04
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.015,
+          "contribution": -0.03
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-035",
+      "status": "scored",
+      "failure_prob": 0.042,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.003,
+          "contribution": -0.056
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.009,
+          "contribution": -0.049
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.012,
+          "contribution": -0.031
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-036",
+      "status": "scored",
+      "failure_prob": 0.101,
+      "risk_band": "medium",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.001,
+          "contribution": -0.056
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": 0.053,
+          "contribution": -0.041
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.079,
+          "contribution": -0.03
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-037",
+      "status": "scored",
+      "failure_prob": 0.051,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.001,
+          "contribution": -0.063
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.053,
+          "contribution": -0.045
+        },
+        {
+          "feature": "vib_slope_3d",
+          "value": -0.005,
+          "contribution": -0.027
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-038",
+      "status": "scored",
+      "failure_prob": 0.04,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.0,
+          "contribution": -0.068
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.017,
+          "contribution": -0.045
+        },
+        {
+          "feature": "rpm_mean_1d",
+          "value": 1630.69,
+          "contribution": -0.026
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-039",
+      "status": "scored",
+      "failure_prob": 0.169,
+      "risk_band": "high",
+      "days_to_failure_est": 5,
+      "days_to_failure_range": [
+        1,
+        7
+      ],
+      "days_to_failure_note": "estimate with 10-90% range",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": -0.002,
+          "contribution": -0.054
+        },
+        {
+          "feature": "pres_mean_7d",
+          "value": 6.229,
+          "contribution": 0.033
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.152,
+          "contribution": -0.028
+        }
+      ],
+      "data_quality": "ok"
+    },
+    {
+      "machine_id": "M-040",
+      "status": "scored_low_confidence",
+      "failure_prob": 0.06,
+      "risk_band": "low",
+      "days_to_failure_est": null,
+      "days_to_failure_range": null,
+      "days_to_failure_note": "low risk: no failure expected within 7 days",
+      "sensor_fault_flag": false,
+      "top_drivers": [
+        {
+          "feature": "vib_per_krpm_slope_7d",
+          "value": 0.001,
+          "contribution": -0.063
+        },
+        {
+          "feature": "vib_slope_1d",
+          "value": -0.031,
+          "contribution": -0.04
+        },
+        {
+          "feature": "vib_vs_base_1d",
+          "value": 0.057,
+          "contribution": -0.025
+        }
+      ],
+      "data_quality": "short history: 13 days"
+    }
+  ]
+}
